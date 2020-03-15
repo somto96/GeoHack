@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geo Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+
+    <!-- MAPBOX GL CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- <button class="uk-button uk-button-default " type="button">Filters</button> -->
+        <!-- <div uk-dropdown="pos: bottom-justify"> -->
+        <div class="uk-dropdown-grid uk-child-width-1-1@m" uk-grid>
+            <div>
+                <ul uk-accordion="multiple: true" id="parent-accordion">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Story Map</a>
+                        <div class="uk-accordion-content">
+                            <ul uk-accordion id="filters">
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- <div class="settings-btn">
+            <button class="uk-button uk-button-default" type="button">Map Style</button>
+            <div uk-dropdown="pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav " id="layer-list">
+                    <div class="layer-stack">
+                        <div>
+                            <input id="streets-v11" type="radio" name="rtoggle" value="streets"  />
+                            <label for="streets">Streets</label>
+                        </div>
+                        <div> 
+                            <input id="dark-v10" type="radio" name="rtoggle" value="dark" checked="checked" />
+                            <label for="dark">Dark</label>
+                        </div>
+                        <div>
+                            <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+                            <label for="satellite">Satellite</label>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div> -->
+        <!-- </div> -->
+    </div>
+    <div id='map'></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+    <!-- MAPBOX GL JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+
+
+    <!-- DATA -->
+    <script type="javascript" src="./js/data/administrative_ibadan_district.geojson"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+
+</html>
