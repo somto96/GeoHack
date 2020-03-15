@@ -73,7 +73,7 @@ $(document).ready(function () {
                     'source': source,
                     'layout': {
                         'icon-image': imageId,
-                        'icon-size': 0.05,
+                        'icon-size': 0.1,
                         'visibility': 'none'
                     }
                 });
@@ -345,7 +345,7 @@ $(document).ready(function () {
     Axios.polygonData('./js/data/administrative_ibadan_district.geojson', 'Boundary', 'admin-boundaries', '#088', 0.3);
     Axios.polygonData('./js/data/flood_extent.geojson', 'Flood Extent', 'flood-extent', 'blue', 0.5);
     Axios.polygonData('./js/data/dumpsites_areas.geojson', 'Dump Sites', 'dump-sites', 'red', 0.5);
-    Axios.pointData('./js/data/health_facilities.geojson', '../assets/img/hospital.png', 'hospital', 'health-facilities', 'Health Facilities');
+    Axios.pointData('./js/data/health_facilities.geojson', 'https://png.pngtree.com/png-clipart/20190116/ourmid/pngtree-hand-painted-medical-health-hospital-png-image_391910.jpg', 'hospital', 'health-facilities', 'Health Facilities');
 
 
     /**
