@@ -18,7 +18,7 @@ $(document).ready(function () {
         style: 'mapbox://styles/mapbox/dark-v10',
         pitch: 55,
         center: [3.916667, 7.396389],
-        zoom: 15,
+        zoom: 10,
         bearing: 17.6,
 
     });
